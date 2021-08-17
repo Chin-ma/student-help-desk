@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+/* .back {
+    background-image: url("/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    object-position: 100% 0;
+    position: absolute;
+    width: 1920px;
+    height: 975px;
+    left: 0px;
+    top: 0px;
+} */
+
+.back {
+    background-image: url("/OneStop_800x533\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    width: 533px;
+    height: 532px;
+    left: 693px;
+    top: 274px;
+}
+
+.form-box {
+    background-color: #42BEB8;
+    position: absolute;
+    top: 380px;
+    left: 821px;
+    width: 283px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.field {
+    padding: 5px;
+    margin: 7px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+    position: absolute;
+    left: 5px;
+}
+
+#user {
+    top: 23px;
+}
+
+#pass {
+    top: 80px;
+}
+
+.log-btn {
+    position: absolute;
+    top: 171px;
+    left: 108px;
+    background-color: #fea500;
+    transition: ease-out 0.4s;
+    cursor: pointer;
+    border-radius: 7px;
+    padding: 5px;
+}
+
+.log-btn:hover {
+    background-color: #154476;
+}
+
+.log-btn a{
+    text-decoration: none;
+    color: #154476;
+    font-size: 20px;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+.log-btn a:hover {
+    color: white;
+}
+
+.state {
+    position: absolute;
+    top: 221px;
+    left: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+
+.state a{
+    text-decoration: none;
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+.back {
+    background-image: url("/OneStop_800x533\ 1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    position: absolute;
+    width: 533px;
+    height: 532px;
+    left: 693px;
+    top: 274px;
+}
+
+.navbar {
+    position: absolute;
+    width: 1920px;
+    height: 70px;
+    left: 0;
+    top: 0;
+    background: #fea500;
+}
+
+.btn-links {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btn-links a {
+    text-decoration: none;
+    color: #154476;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 60px;
+    padding-right: 15px;
+    font-size: 28px;
+}
+
+.login {
+    transition: ease-in-out 0.2s;
+}
+
+.login:hover {
+    color: white;
+}
+
+.signup {
+    transition: ease-in-out 0.4s;
+}
+
+.signup:hover {
+    color: white;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    .navbar {
+        position: absolute;
+        width: 900px;
+        height: 30px;
+        left: 0;
+        top: 0;
+        background: #fea500;
+    }
+}
