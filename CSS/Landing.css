@@ -1,15 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
-.back {
-    background-image: url("/OneStop_800x533\ 1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4;
+img {
+    max-width: 100%;
+}
+
+html {
+    font-size: 100%;
+}
+
+.logo-img {
     position: absolute;
-    width: 533px;
-    height: 532px;
-    left: 693px;
-    top: 274px;
+    width: 170px;
+    height: 161px;
+    opacity: 0.5;
+}
+
+#lg1 {
+    right: 65px;
+    top: 150px;
+}
+
+#lg2 {
+    right: 65px;
+    top: 780px;
+}
+
+#lg3 {
+    left: 65px;
+    top: 150px;
+}
+
+#lg4 {
+    left: 65px;
+    top: 780px;
 }
 
 .navbar {
@@ -54,16 +77,87 @@
     color: white;
 }
 
-
-
-
-@media only screen and (max-width: 900px) {
-    .navbar {
-        position: absolute;
-        width: 900px;
-        height: 30px;
-        left: 0;
-        top: 0;
-        background: #fea500;
-    }
+.large-btns {
+    background-color: #fea500;
+    position: absolute;
+    width: 1120px;
+    height: 107px;
+    left: 400px;
+    top: 341px;
+    border-radius: 27px;
+    cursor: pointer;
 }
+
+.large-btns:hover {
+    background-color: #154476;
+}
+
+#btn2 {
+    top: 510px;
+}
+#btn3 {
+    top: 679px;
+}
+
+.post1 {
+    position: absolute;
+    width: 915px;
+    height: 74px;
+    left: 406px;
+    top: 16px;
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FCE08E;
+}
+
+#post2 {
+    left: 363px;
+}
+
+#post3 {
+    left: 443px;
+}
+
+.header {
+    position: absolute;
+    width: 446px;
+    height: 71px;
+    left: 22px;
+    top: -2px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 

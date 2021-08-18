@@ -1,29 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
-/* .back {
-    background-image: url("/background.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    object-fit: cover;
-    object-position: 100% 0;
+.logo-img {
+    position: absolute;
+    width: 170px;
+    height: 161px;
+    opacity: 0.5;
+}
+
+#lg1 {
+    right: 65px;
+    top: 150px;
+}
+
+#lg2 {
+    right: 65px;
+    top: 780px;
+}
+
+#lg3 {
+    left: 65px;
+    top: 150px;
+}
+
+#lg4 {
+    left: 65px;
+    top: 780px;
+}
+
+.navbar {
     position: absolute;
     width: 1920px;
-    height: 975px;
-    left: 0px;
-    top: 0px;
-} */
-
-.back {
-    background-image: url("/OneStop_800x533\ 1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4;
-    position: absolute;
-    width: 533px;
-    height: 532px;
-    left: 693px;
-    top: 274px;
+    height: 70px;
+    left: 0;
+    top: 0;
+    background: #fea500;
 }
 
 .form-box {
@@ -90,4 +100,25 @@
 
 .state a{
     text-decoration: none;
+}
+
+.header {
+    position: absolute;
+    width: 446px;
+    height: 71px;
+    left: 22px;
+    top: -2px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
