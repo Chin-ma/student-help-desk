@@ -9,6 +9,7 @@
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/CSS/Landing.css">
+    <link rel="stylesheet" href="/CSS/Query.css">
 </head>
 <body>
     <div class="back">
@@ -20,26 +21,23 @@
     <div class="navbar">
         <div class="header">
             Student Help Desk
-        </div>
-        <div class="btn-links">
-            <a href="Login.html" class="login">Login</a>
-            <a href="Signup.html" class="signup">Sign up</a>
-        </div>        
+        </div>       
     </div>
-    <a href="Login.html">
-        <div class="large-btns" id="btn1">
-            <span class="post1">Post your query</span>
+    <div class="query-form">
+        <div class="heading">
+            <span class="query-head">Your Query</span>
         </div>
-    </a>
-    <a href="Login.html">
-        <div class="large-btns" id="btn2">
-            <span class="post1" id="post2">View posted queries</span>
-        </div>
-    </a>
-    <a href="Contact.html">
-        <div class="large-btns" id="btn3">
-            <span class="post1" id="post3">Contact Us</span>
-        </div>
-    </a>
+        <form action="Query.php" method="post">
+            <textarea name="query-text" id="q-text" placeholder="Type here ..."></textarea>
+            <div class="action-btns">
+                <a href="Home.html">
+                    <button class="sub-btn" type="submit">Post</button>
+                </a>
+            </div>
+        </form>
+        <a href="Home.html">
+            <button class="can-btn">Cancel</button>
+        </a>
+    </div>
 </body>
 </html>
