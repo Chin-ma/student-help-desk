@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
+    <script src="https://use.fontawesome.com/b97cfec694.js"></script>
     <link rel="stylesheet" href="/CSS/Login.css">
 </head>
 
@@ -18,18 +19,28 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header">
+        <div class="header" onclick="window.location.href='Landing.html'">
             Student Help Desk
         </div>
     </div>
     <div class="form-box">
         <form action="Data.php" method="post">
             <input type="text" name="username" id="user" class="field" placeholder="Username">
-            <input type="password" name="password" id="pass" class="field" placeholder="Password">
+            <input type="password" name="password" id="pass" class="field" placeholder="Password"><i class="fa fa-eye" id="eye" onclick="show('pass')"></i>
+            <button class="log-btn"><a href="Home.html">Login</a></button>
         </form>
-        <button class="log-btn"><a href="Home.html">Login</a></button>
         <span class="state">Don't have an account? <a href="Signup.html">Sign up</a></span>
     </div>
+    <script>
+        function show(id) {
+            var x = document.getElementById(id)
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
 </body>
 
 </html>
