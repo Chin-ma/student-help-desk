@@ -122,3 +122,32 @@
     top: 98px;
     left: 242px;
 }
+
+.admin {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 692px;
+    left: 821px;
+    width: 248px;
+    background-color: #fea500;
+    color: #154476;
+    padding: 18px;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: ease-out 0.4s;
+}
+
+.admin:hover {
+    background-color: #154476;
+    color: white;
+}
+
+.admin-log {
+    position: absolute;
+    left: 96px;
+    font-family: Source Sans Pro;
+}
