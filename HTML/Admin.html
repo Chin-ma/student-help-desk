@@ -8,7 +8,7 @@
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
     <script src="https://use.fontawesome.com/b97cfec694.js"></script>
-    <link rel="stylesheet" href="/CSS/Login.css">
+    <link rel="stylesheet" href="/CSS/Admin.css">
 </head>
 
 <body>
@@ -25,17 +25,12 @@
     </div>
     <div class="form-box">
         <form action="Admin.php" method="post">
-            <input type="text" name="username" id="user" class="field" placeholder="Username">
-            <input type="password" name="password" id="pass" class="field" placeholder="Password"><i class="fa fa-eye" id="eye" onclick="show('pass')"></i>
+            <input type="text" name="adminname" id="user" class="field" placeholder="Admin Username">
+            <input type="password" name="adminpass" id="pass" class="field" placeholder="Password"><i class="fa fa-eye" id="eye" onclick="show('pass')"></i>
             <button class="log-btn">Login</button>
         </form>
         <span class="state">The Admin can reply to the posted queries. Authorised users only.</span>
     </div>
-    <!-- <a href="Admin.html">
-        <div class="admin" id="btn2">
-            <span class="admin-log" id="post2">Admin Login</span>
-        </div>
-    </a> -->
     
     <script>
         function show(id) {

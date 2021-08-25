@@ -25,17 +25,32 @@
     background-color: #FCE08E;
     position: absolute;
     left: 38px;
-    top: 100px;
+    top: 150px;
     font-family: Source Sans Pro;
     width: 750px;
-    height: 354px;
+    height: 300px;
     font-size: 18px;
     resize: none;
     border: none;
 }
 
-#q-text::after {
-    border: none;
+.user-data {
+    position: absolute;
+    padding: 5px;
+    top: 105px;
+    width: 300px;
+    border-radius: 30px;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#u-sub {
+    right: 38px;
+}
+
+#u-name {
+    left: 38px;
 }
 
 .query-head {

@@ -19,7 +19,7 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header">
+        <div class="header" onclick="window.location.href='Landing.html'">
             Student Help Desk
         </div>       
     </div>
@@ -28,7 +28,9 @@
             <span class="query-head">Your Query</span>
         </div>
         <form action="Query.php" method="post">
-            <textarea name="query-text" id="q-text" placeholder="Type here ..."></textarea>
+            <input type="text" name="name" class="user-data" id="u-name" placeholder="Your name">
+            <input type="text" name="subject" class="user-data" id="u-sub" placeholder="Subject">  
+            <textarea name="querytext" id="q-text" placeholder="Type here ..."></textarea>
             <div class="action-btns">
                 <a href="Home.html">
                     <button class="sub-btn" type="submit">Post</button>

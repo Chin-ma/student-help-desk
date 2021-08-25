@@ -8,7 +8,8 @@
     <meta name="HandheldFriendly" content="true">
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="/CSS/Reply.css">
+    <link rel="stylesheet" href="/CSS/Landing.css">
+    <link rel="stylesheet" href="/CSS/QueryList.css">
 </head>
 <body>
     <div class="back">
@@ -20,15 +21,25 @@
     <div class="navbar">
         <div class="header" onclick="window.location.href='Landing.html'">
             Student Help Desk
-        </div>
-        <div class="btn-links">
-            <a href="Login.html" class="login">Logout</a>
-        </div>        
+        </div>   
     </div>
-    <a href="AdminQueryList.html">
-        <div class="large-btns" id="btn1">
-            <span class="post1">Reply to posted Queries</span>
+    <div class="query-head">
+        <span class="y-query">Your Queries</span>
+    </div>
+    <form action="Search.php" method="post">
+        <div class="search-data">
+            <input type="text" placeholder="Search your query" name="search" class="query-search" id="q-serach">
         </div>
-    </a>
-</body>
+    </form><br>
+    <div class="query">
+        <?php
+            include 'Config.php';
+            $sql = mysqli_query($conn, "SELECT * FROM queries");
+            while ($row = mysqli_fetch_array($sql)) { ?>
+                <?php echo $row['name'];?>
+                <?php echo $row['subject'];?>
+                <?php echo $row['querytext'];?> 
+            <?php }?>
+    </div> 
+</body>         
 </html>
