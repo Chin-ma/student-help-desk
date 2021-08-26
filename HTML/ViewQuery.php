@@ -31,14 +31,15 @@
             <input type="text" placeholder="Search your query" name="search" class="query-search" id="q-serach">
         </div>
     </form><br>
-    <div class="query">
+    <div>
         <?php
             include 'Config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries");
             while ($row = mysqli_fetch_array($sql)) { ?>
-                <?php echo $row['name'];?>
-                <?php echo $row['subject'];?>
-                <?php echo $row['querytext'];?> 
+                <div class="query">
+                    <?php echo $row['querytext'];?>
+                </div>
+                 
             <?php }?>
     </div> 
 </body>         

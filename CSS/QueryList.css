@@ -41,10 +41,16 @@
     background: #fce08e;
 }
 
-.queries {
-    position: absolute;
-    top: 300px;
-    left: 650px;
+.query {
+    position: relative;
+    top: 267px;
+    left: 550px;
     background-color: #fce08e;
-    width: 500px;
+    width: 750px;
+    font-family: Source Sans Pro;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
 }

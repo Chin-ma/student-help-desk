@@ -1,0 +1,63 @@
+.stud-query {
+    position: absolute;
+    top: 100px;
+    left: 660px;
+    background-color: #fea500;
+    color: #fce08e;
+    border-radius: 30px;
+    width: 600px;
+    align-items: center;
+    text-align: center;
+    font-family: Source Sans Pro;
+    font-size: 45px;
+}
+
+.stud-queries {
+    position: relative;
+    top: 170px;
+    left: 500px;
+    background-color: #fce08e;
+    width: 750px;
+    font-family: Source Sans Pro;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.reply-btn {
+    position: absolute;
+    top: -4px;
+    right: -70px;
+    
+}
+
+#showarea {
+    font-family: Source Sans Pro;
+    background-color: #fea500;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+#text {
+    position: absolute;
+    top: 0;
+    left: 68px;
+    resize: none;
+    background-color: #fce08e;
+    font-family: Source Sans Pro;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+.ok-btn {
+    position: absolute;
+    top: 5px;
+    left: 270px;
+    font-family: Source Sans Pro;
+    background-color: #fea500;
+    font-size: 18px;
+    border-radius: 10px;
+}
