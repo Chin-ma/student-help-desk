@@ -40,22 +40,23 @@
     border-radius: 10px;
 }
 
-#text {
-    position: absolute;
-    top: 0;
-    left: 68px;
+#insert-text {
+    position: relative;
+    top: 175px;
+    left: 516px;
     resize: none;
     background-color: #fce08e;
     font-family: Source Sans Pro;
     font-size: 15px;
     border-radius: 10px;
     height: 100px;
+    width: 744px;
 }
 
 .ok-btn {
-    position: absolute;
-    top: 5px;
-    left: 270px;
+    position: relative;
+    top: 166px;
+    left:528px;
     font-family: Source Sans Pro;
     background-color: #fea500;
     font-size: 18px;

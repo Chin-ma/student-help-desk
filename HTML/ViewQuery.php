@@ -32,14 +32,17 @@
         </div>
     </form><br>
     <div>
-        <?php
+    <?php
             include 'Config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries");
             while ($row = mysqli_fetch_array($sql)) { ?>
                 <div class="query">
                     <?php echo $row['querytext'];?>
                 </div>
-                 
+                <div class="query-reply" id="quer" style="display: block;">
+                    <?php echo $row['reply'];?>
+                </div>
+                
             <?php }?>
     </div> 
 </body>         

@@ -28,33 +28,21 @@
     </div>
     <span class="stud-query">Student Queries</span>
     <div>
-        <?php
+    <?php 
             include 'Config.php';
-            $sql = mysqli_query($conn, "SELECT querytext FROM queries ");
-            while ($row = mysqli_fetch_array($sql)) { ?>
+            $sql = mysqli_query($conn, "SELECT * FROM queries");
+            while ($row = mysqli_fetch_assoc($sql)) { ?>
                 <div class="stud-queries">
-                    <?php echo $row['querytext'];?><br>
-                    <div class="reply-btn">
-                        <button id="showarea" name="showarea" type="button" value="Show TextArea" onclick="openText()">Reply</button>
-                        <form action="Reply.php" method="post">
-                            <textarea id="text" name="reply" style="display: none;"></textarea>
-                            <button type="submit" class="ok-btn">OK</button>
-                        </form>
-                    </div>
+                    <?php echo $row['name'];?> :&nbsp
+                    <?php echo $row['querytext'];?>
                 </div>
-            <?php }?>
+                <form action="Reply.php" method="post">
+                    <textarea id="insert-text" name="reply" value="<?php echo $row['reply'];?>"></textarea>   
+                    <button type="submit" name="submit" value="Submit Form" class="ok-btn">OK</button>
+                    <input type="hidden" name="id" value="<?php echo $row['id'];?>">
+                </form>
+                
+        <?php }?>
     </div>
-    
-    <script type="text/javascript">
-        function openText() {
-            var x = document.getElementById("text");
-            if (x.style.display === 'none') {
-                x.style.display = 'block';
-            }
-            else {
-                x.style.display = 'none';
-            }
-        }
-    </script>
 </body>
 </html>
