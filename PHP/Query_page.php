@@ -9,7 +9,7 @@
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/CSS/Landing.css">
-    <link rel="stylesheet" href="/CSS/Contact.css">
+    <link rel="stylesheet" href="/CSS/Query.css">
 </head>
 <body>
     <div class="back">
@@ -19,26 +19,27 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header" onclick="window.location.href='Landing.html'">
+        <div class="header" onclick="window.location.href='index.php'">
             Student Help Desk
+        </div>       
+    </div>
+    <div class="query-form">
+        <div class="heading">
+            <span class="query-head">Your Query</span>
         </div>
-        <div class="btn-links" id="topNav">
-            <a href="Login.html" class="login">Login</a>
-            <a href="Signup.html" class="signup">Sign up</a>
-        </div>     
-    </div>
-    <div class="contact-head">
-        Contact Us
-    </div>
-    <div class="contact-box">
-        Call Us <br><br>
-        +91 9890523648 <br>
-        +91 9654851235 <br><br>
-        Location <br><br>
-        100 Main Street, 21 Avenue,<br> Mumbai (400062) <br><br>
-        Business Hours <br><br>
-        Mon - Fri .... 10 am - 8am <br>
-        Sat, Sun Closed <br>
+        <form action="Query.php" method="post">
+            <input type="text" name="name" class="user-data" id="u-name" placeholder="Your name">
+            <input type="text" name="subject" class="user-data" id="u-sub" placeholder="Subject">  
+            <textarea name="querytext" id="q-text" placeholder="Type here ..."></textarea>
+            <div class="action-btns">
+                <a href="Home.html">
+                    <button class="sub-btn" type="submit">Post</button>
+                </a>
+            </div>
+        </form>
+        <a href="Home.html">
+            <button class="can-btn">Cancel</button>
+        </a>
     </div>
 </body>
 </html>

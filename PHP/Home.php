@@ -9,7 +9,6 @@
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/CSS/Landing.css">
-    <link rel="stylesheet" href="/CSS/Query.css">
 </head>
 <body>
     <div class="back">
@@ -19,27 +18,28 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header" onclick="window.location.href='Landing.html'">
+        <div class="header" onclick="window.location.href='index.php'">
             Student Help Desk
-        </div>       
-    </div>
-    <div class="query-form">
-        <div class="heading">
-            <span class="query-head">Your Query</span>
         </div>
-        <form action="Query.php" method="post">
-            <input type="text" name="name" class="user-data" id="u-name" placeholder="Your name">
-            <input type="text" name="subject" class="user-data" id="u-sub" placeholder="Subject">  
-            <textarea name="querytext" id="q-text" placeholder="Type here ..."></textarea>
-            <div class="action-btns">
-                <a href="Home.html">
-                    <button class="sub-btn" type="submit">Post</button>
-                </a>
-            </div>
-        </form>
-        <a href="Home.html">
-            <button class="can-btn">Cancel</button>
-        </a>
+        <div class="btn-links">
+            <a href="Login.html" class="login">Logout</a>
+        </div>        
     </div>
+    <a href="Query.html" class="rem-line">
+        <div class="large-btns" id="btn1">
+            <span class="post1">Post your query</span>
+        </div>
+    </a>
+    <a href="ViewQuery.php" class="rem-line">
+        <div class="large-btns" id="btn2">
+            <span class="post1" id="post2">View posted queries</span>
+        </div>
+    </a>
+    <a href="Contact.html" class="rem-line">
+        <div class="large-btns" id="btn3">
+            <span class="post1" id="post3">Contact Us</span>
+        </div>
+    </a>
+   
 </body>
 </html>

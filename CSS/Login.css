@@ -1,41 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
 
-.logo-img {
-    position: absolute;
-    width: 170px;
-    height: 161px;
-    opacity: 0.5;
-}
-
-#lg1 {
-    right: 65px;
-    top: 150px;
-}
-
-#lg2 {
-    right: 65px;
-    top: 780px;
-}
-
-#lg3 {
-    left: 65px;
-    top: 150px;
-}
-
-#lg4 {
-    left: 65px;
-    top: 780px;
-}
-
-.navbar {
-    position: absolute;
-    width: 1920px;
-    height: 70px;
-    left: 0;
-    top: 0;
-    background: #fea500;
-}
-
 .form-box {
     background-color: #42BEB8;
     position: absolute;

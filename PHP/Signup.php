@@ -8,8 +8,7 @@
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
     <script src="https://use.fontawesome.com/b97cfec694.js"></script>
-    <link rel="stylesheet" href="/CSS/Login.css">
-    <link rel="stylesheet" href="/CSS/Landing.css">
+    <link rel="stylesheet" href="/CSS/Signup.css">
 </head>
 
 <body>
@@ -20,24 +19,20 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header" onclick="window.location.href='Landing.html'">
+        <div class="header" onclick="window.location.href='index.php'">
             Student Help Desk
         </div>
     </div>
     <div class="form-box">
-        <form action="Login.php" method="post">
+        <form action="Data.php" method="post">
+            <input type="text" name="studname" id="stud" class="field" placeholder="Student name">
             <input type="text" name="username" id="user" class="field" placeholder="Username">
+            <input type="email" name="email" id="studmail" class="field" placeholder="Email">
             <input type="password" name="password" id="pass" class="field" placeholder="Password"><i class="fa fa-eye" id="eye" onclick="show('pass')"></i>
-            <button class="log-btn">Login</button>
+            <button class="log-btn">Sign In</button>
         </form>
         <span class="state">Don't have an account? <a href="Signup.html">Sign up</a></span>
     </div>
-    <a href="Admin.html">
-        <div class="admin">
-            <span class="admin-log">Admin Login</span>
-        </div>
-    </a>
-    
     <script>
         function show(id) {
             var x = document.getElementById(id)

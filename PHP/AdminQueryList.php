@@ -9,7 +9,7 @@
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
     <link rel="stylesheet" href="/CSS/Landing.css">
-    <link rel="stylesheet" href="/CSS/QueryList.css">
+    <link rel="stylesheet" href="/CSS/AdminQueryList.css">
 </head>
 <body>
     <div class="back">
@@ -19,31 +19,30 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header" onclick="window.location.href='Landing.html'">
+        <div class="header" onclick="window.location.href='index.php'">
             Student Help Desk
-        </div>   
-    </div>
-    <div class="query-head">
-        <span class="y-query">Your Queries</span>
-    </div>
-    <form action="Search.php" method="post">
-        <div class="search-data">
-            <input type="text" placeholder="Search your query" name="search" class="query-search" id="q-serach">
         </div>
-    </form><br>
+        <div class="btn-links">
+            <a href="Login.html" class="login">Logout</a>
+        </div>        
+    </div>
+    <span class="stud-query">Student Queries</span>
     <div>
-    <?php
+    <?php 
             include 'Config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries");
-            while ($row = mysqli_fetch_array($sql)) { ?>
-                <div class="query">
+            while ($row = mysqli_fetch_assoc($sql)) { ?>
+                <div class="stud-queries">
+                    <?php echo $row['name'];?> :&nbsp
                     <?php echo $row['querytext'];?>
                 </div>
-                <div class="query-reply" id="quer" style="display: block;">
-                    <?php echo $row['reply'];?>
-                </div>
+                <form action="Reply.php" method="post">
+                    <textarea id="insert-text" name="reply" value="<?php echo $row['reply'];?>"></textarea>   
+                    <button type="submit" name="submit" value="Submit Form" class="ok-btn">OK</button>
+                    <input type="hidden" name="id" value="<?php echo $row['id'];?>">
+                </form>
                 
-            <?php }?>
-    </div> 
-</body>         
+        <?php }?>
+    </div>
+</body>
 </html>
