@@ -203,8 +203,8 @@
         height: 50px;
     }
     .logo-img {
-        width: 70px;
-        height: 61px;
+        width: 0px;
+        height: 0px;
     }
     .btn-links{
         position: relative;
@@ -225,16 +225,16 @@
     }
     .post1 {
         position: relative;
-        left: 180px;
+        left: 80px;
         top: -11px;
         width: 50%;
         font-size: 18px;
     }
     #post2 {
-        left: 161px;
+        left: 70px;
     }
     #post3 {
-        left: 194px;
+        left: 94px;
     }
 }
 

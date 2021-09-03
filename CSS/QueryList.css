@@ -54,3 +54,43 @@
     border-radius: 10px;
     margin: 15px;
 }
+
+@media screen and (max-width: 320px) {
+    .query-head {
+        position: relative;
+        width: 100%;
+        height: 49px;
+        left: 0;
+        top: 0;
+    }
+    .query-search {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+        width: 70%;
+        height: 80%;
+        top: 10px;
+        left: 40px;
+    }
+    .query {
+        position: relative;
+        font-size: 13px;
+        width: 90%;
+        left: 0;
+        top: 0;
+    }
+    .query-reply {
+        position: relative;
+        font-size: 13px;
+        width: 90%;
+        left: 0;
+        top: 0;
+    }
+    .y-query {
+        position: relative;
+        left: 97px;
+        top: -17px;
+        font-size: 21px;
+    }
+}
