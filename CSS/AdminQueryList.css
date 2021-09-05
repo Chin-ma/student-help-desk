@@ -62,3 +62,36 @@
     font-size: 18px;
     border-radius: 10px;
 }
+
+@media screen and (max-width: 480px) {
+    .stud-query {
+        position: absolute;
+        left: 20px;
+        top: 60px;
+        font-size: 18px;
+        width: 90%;
+    }
+    .stud-queries {
+        position: relative;
+        top: 17px;
+        left: 23px;
+        width: 80%;
+        font-size: 15px;
+    }
+    #showarea {
+        font-size: 10px;
+    }
+    #insert-text {
+        position: relative;
+        top: 17px;
+        left: 60px;
+        font-size: 10px;
+        height: 60px;
+        width: 236px;
+    }
+    .ok-btn {
+        font-size: 10px;
+        top: 31px;
+        left: 27px;
+    }
+}

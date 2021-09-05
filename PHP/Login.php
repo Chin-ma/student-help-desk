@@ -1,6 +1,6 @@
 <?php
 
-include 'Config.php';
+include 'config.php';
 $username = $_POST['username'];
 $password = $_POST['password'];
 
@@ -15,9 +15,9 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 
 if ($count == 1) {
-    header('Location: Home.html');
+    header('Location: home.php');
 } else {
-    header('Location: Login.html');
+    header('Location: login.php');
 }
 
 

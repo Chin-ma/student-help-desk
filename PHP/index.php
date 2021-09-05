@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="/CSS/Landing.css">
+    <link rel="stylesheet" href="landing.css">
 </head>
 <body>
     <div class="back">
@@ -18,25 +18,25 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header" onclick="window.location.href='Landing.html'">
+        <div class="header" onclick="window.location.href='index.php'">
             Student Help Desk
         </div>
         <div class="btn-links" id="topNav">
-            <a href="Login.html" class="login">Login</a>
-            <a href="Signup.html" class="signup">Sign up</a>
+            <a href="login.php" class="login">Login</a>
+            <a href="signup.php" class="signup">Sign up</a>
         </div>     
     </div>
-    <a href="Login.html" class="rem-line">
+    <a href="login.php" class="rem-line">
         <div class="large-btns" id="btn1">
             <span class="post1">Post your query</span>
         </div>
     </a>
-    <a href="Login.html" class="rem-line">
+    <a href="login.php" class="rem-line">
         <div class="large-btns" id="btn2">
             <span class="post1" id="post2">View posted queries</span>
         </div>
     </a>
-    <a href="Contact.html" class="rem-line">
+    <a href="contact.php" class="rem-line">
         <div class="large-btns" id="btn3">
             <span class="post1" id="post3">Contact Us</span>
         </div>

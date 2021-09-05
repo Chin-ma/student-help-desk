@@ -30,10 +30,11 @@
 .navbar {
     position: relative;
     top: -8px;
-    left: -2px;
+    left: -8px;
     width: 1920px;
     height: 70px;
     background: #fea500;
+    overflow: hidden;
 }
 
 .btn-links {
@@ -81,6 +82,7 @@
     margin: 50px;
     border-radius: 27px;
     cursor: pointer;
+    text-align: center;
 }
 
 .large-btns:hover {
@@ -89,19 +91,17 @@
 
 .post1 {
     position: relative;
-    width: 915px;
+    /* width: 915px;
     height: 74px;
     left: 406px;
-    top: 16px;
+    top: 16px; */
     font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
     line-height: 60px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
     color: #FCE08E;
     text-decoration: none;
 }
@@ -139,23 +139,23 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 480px) {
     .header {
         position: absolute;
         left: 10px;
         top: -10px;
         font-size: 20px;
-        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }
     .navbar {
-        width: 100%;
+        width: 105%;
         height: 50px;
     }
     .logo-img {
         width: 0px;
         height: 0px;
-        /* display: none; */
+       /*  display: none; */
     }
     .btn-links{
         position: relative;
@@ -176,20 +176,19 @@
     }
     .post1 {
         position: relative;
-        left: 80px;
-        top: -17px;
-        width: 50%;
+        left: 0px;
+        top: -11px;
         font-size: 13px;
     }
     #post2 {
-        left: 66px;
+        left: 0px;
     }
     #post3 {
-        left: 93px;
+        left: 0px;
     }
 }
 
-@media screen and (min-width: 600px) {
+@media (min-width: 481px) and (max-width: 780px) {
     .header {
         position: absolute;
         left: 10px;
@@ -218,27 +217,27 @@
     }
     .large-btns {
         width: 80%;
-        height: 50px;
-        top: 157px;
-        left: 20px;
+        height: 64px;
+        top: 22px;
+        left: 43px;
+        margin: 30px;
         font-size: 18px;
     }
     .post1 {
         position: relative;
-        left: 80px;
-        top: -11px;
-        width: 50%;
+        left: 0px;
+        top: 0px;
         font-size: 18px;
     }
     #post2 {
-        left: 70px;
+        left: 0px;
     }
     #post3 {
-        left: 94px;
+        left: 0px;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 781px) and (max-width: 1024px) {
     .header {
         position: absolute;
         left: 18px;
@@ -267,27 +266,26 @@
     }
     .large-btns {
         position: relative;
-        width: 70%;
+        width: 65%;
         height: 90px;
-        top: 266px;
+        top: 226px;
         left: 128px;
     }
     .post1 {
         position: relative;
-        left: 230px;
-        top: 2px;
-        width: 50%;
+        left: 0px;
+        top: 12px;
         font-size: 40px;
     }
     #post2 {
-        left: 189px;
+        left: 0px;
     }
     #post3 {
-        left: 260px;
+        left: 0px;
     }
 }
 
-@media screen and (min-width: 1440px) {    
+@media (min-width: 1025px) and (max-width: 1440px) {    
     .header {
         position: absolute;
         left: 18px;
@@ -323,20 +321,19 @@
     }
     .post1 {
         position: relative;
-        left: 396px;
-        top: 2px;
-        width: 50%;
+        left: 0px;
+        top: 12px;
         font-size: 40px;
     }
     #post2 {
-        left: 355px;
+        left: 0px;
     }
     #post3 {
-        left: 426px;
+        left: 0px;
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media (min-width: 1441px) and (max-width: 1920px) {
     .logo-img {
         position: absolute;
         width: 170px;

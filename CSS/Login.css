@@ -116,19 +116,25 @@
     font-family: Source Sans Pro;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
     .form-box {
-        top: 0px;
-        left: 30px;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
         width: 250px;
         height: 230px;
+        margin: auto;
     }
     .logo-img {
         display: none;
     }
     .admin {
-        top: 5px;
-        left: 30px;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
         font-size: 15px;
         width: 215px;
     }
@@ -158,5 +164,53 @@
     #eye {
         top: 75px;
         left: 205px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .form-box {
+        top: 25px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 300px;
+        height: 250px;
+    }
+    .admin {
+        top: 26px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 15px;
+        width: 265px;
+    }
+    .admin-log {
+        left: 110px;
+    }
+    .field {
+        font-size: 20px;
+        left: 15px;
+    }
+    #user {
+        top: 15px;
+    }
+    #pass {
+        top: 60px;
+    }
+    .state {
+        font-size: 20px;
+        top: 190px;
+        left: 30px;
+    }
+    .log-btn {
+        font-size: 20px;
+        top: 130px;
+        left: 118px;
+    }
+    #eye {
+        top: 75px;
+        left: 251px;
     }
 }

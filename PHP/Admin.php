@@ -1,6 +1,6 @@
 <?php
 
-include 'Config.php';
+include 'config.php';
 $adminname = $_POST['adminname'];
 $adminpass = $_POST['adminpass'];
 
@@ -15,9 +15,9 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 $count = mysqli_num_rows($result);
 
 if ($count == 1) {
-    header('Location: AdminQueryList.html');
+    header('Location: adminQueryList.php');
 } else {
-    header('Location: Admin.html');
+    header('Location: adminPage.php');
 }
 
 

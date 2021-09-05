@@ -1,6 +1,6 @@
 <?php
 
-include 'Config.php';
+include 'config.php';
 
 $name = $_POST['name'];
 $subject = $_POST['subject'];
@@ -15,7 +15,6 @@ else {
     echo 'Error'. $sql . 'br' . $conn->error;
 }
 
-$conn->close();
-header('Location: ViewQuery.php');
+header('Location: viewQuery.php');
 
 ?>

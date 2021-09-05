@@ -8,8 +8,8 @@
     <meta name="HandheldFriendly" content="true">
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="/CSS/Landing.css">
-    <link rel="stylesheet" href="/CSS/Query.css">
+    <link rel="stylesheet" href="/CSS/landing.css">
+    <link rel="stylesheet" href="/CSS/query.css">
 </head>
 <body>
     <div class="back">
@@ -27,17 +27,17 @@
         <div class="heading">
             <span class="query-head">Your Query</span>
         </div>
-        <form action="Query.php" method="post">
+        <form action="query.php" method="post">
             <input type="text" name="name" class="user-data" id="u-name" placeholder="Your name">
             <input type="text" name="subject" class="user-data" id="u-sub" placeholder="Subject">  
             <textarea name="querytext" id="q-text" placeholder="Type here ..."></textarea>
             <div class="action-btns">
-                <a href="Home.html">
+                <a href="viewQuery.php">
                     <button class="sub-btn" type="submit">Post</button>
                 </a>
             </div>
         </form>
-        <a href="Home.html">
+        <a href="home.php">
             <button class="can-btn">Cancel</button>
         </a>
     </div>

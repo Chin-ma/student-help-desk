@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="/CSS/Landing.css">
+    <link rel="stylesheet" href="/CSS/landing.css">
 </head>
 <body>
     <div class="back">
@@ -22,20 +22,20 @@
             Student Help Desk
         </div>
         <div class="btn-links">
-            <a href="Login.html" class="login">Logout</a>
+            <a href="login.php" class="login">Logout</a>
         </div>        
     </div>
-    <a href="Query.html" class="rem-line">
+    <a href="queryPage.php" class="rem-line">
         <div class="large-btns" id="btn1">
             <span class="post1">Post your query</span>
         </div>
     </a>
-    <a href="ViewQuery.php" class="rem-line">
+    <a href="viewQuery.php" class="rem-line">
         <div class="large-btns" id="btn2">
             <span class="post1" id="post2">View posted queries</span>
         </div>
     </a>
-    <a href="Contact.html" class="rem-line">
+    <a href="contact.php" class="rem-line">
         <div class="large-btns" id="btn3">
             <span class="post1" id="post3">Contact Us</span>
         </div>

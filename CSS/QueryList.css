@@ -1,9 +1,9 @@
 .query-head {
-    position: absolute;
+    position: relative;
     width: 841px;
     height: 82px;
     left: 530px;
-    top: 170px;
+    top: 45px;
     background: #FEA500;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 42px;
@@ -15,11 +15,7 @@
     font-weight: bold;
     font-size: 48px;
     line-height: 60px;
-    display: flex;
-    align-items: center;
-    text-align: center; 
     position: absolute;
-    width: 428px;
     height: 63px;
     left: 299px;
     top: 10px;
@@ -27,10 +23,9 @@
 
 .query-search {
     position: absolute;
-    top: 270px;
+    top: 220px;
     left: 810px;
     width: 300px;
-    background-color: #fce08e;
     font-size: 18px;
     font-family: Source Sans Pro;
     padding-inline: 5px;
@@ -43,7 +38,7 @@
 
 .query {
     position: relative;
-    top: 267px;
+    top: 76px;
     left: 550px;
     background-color: #fce08e;
     width: 750px;
@@ -53,9 +48,25 @@
     text-align: center;
     border-radius: 10px;
     margin: 15px;
+    overflow-y: hidden;
 }
 
-@media screen and (max-width: 320px) {
+.query-reply {
+    position: relative;
+    top: 76px;
+    left: 550px;
+    background-color: #154476;
+    color: white;
+    width: 750px;
+    font-family: Source Sans Pro;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+@media screen and (max-width: 480px) {
     .query-head {
         position: relative;
         width: 100%;
@@ -65,8 +76,8 @@
     }
     .query-search {
         position: relative;
-        display: flex;
-        flex-direction: column;
+        /*display: flex;
+        flex-direction: column;*/
         font-size: 13px;
         width: 70%;
         height: 80%;
@@ -79,6 +90,7 @@
         width: 90%;
         left: 0;
         top: 0;
+        overflow: none;
     }
     .query-reply {
         position: relative;
@@ -89,8 +101,8 @@
     }
     .y-query {
         position: relative;
-        left: 97px;
-        top: -17px;
+        left: 119px;
+        top: -6px;
         font-size: 21px;
     }
 }

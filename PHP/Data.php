@@ -1,6 +1,6 @@
 <?php
 
-include 'Config.php';
+include 'config.php';
 
 $studname = $_POST['stud_name'];
 $username = $_POST['username'];
@@ -16,6 +16,6 @@ else {
 }
 
 $conn->close();
-header('Location: Login.html');
+header('Location: login.php');
 
 ?>

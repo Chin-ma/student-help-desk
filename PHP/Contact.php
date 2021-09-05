@@ -8,8 +8,8 @@
     <meta name="HandheldFriendly" content="true">
     <title>Student Help Desk</title>
     <link rel="android-chrome-512x512.png icon" href="/favicon_io/favicon.ico">
-    <link rel="stylesheet" href="/CSS/Landing.css">
-    <link rel="stylesheet" href="/CSS/Contact.css">
+    <link rel="stylesheet" href="/CSS/landing.css">
+    <link rel="stylesheet" href="/CSS/contact.css">
 </head>
 <body>
     <div class="back">
@@ -19,12 +19,12 @@
         <img src="/OneStop_800x533 1.png" alt="4" class="logo-img" id="lg4">
     </div>
     <div class="navbar">
-        <div class="header" onclick="window.location.href='Landing.php'">
+        <div class="header" onclick="window.location.href='index.php'">
             Student Help Desk
         </div>
         <div class="btn-links" id="topNav">
-            <a href="Login.html" class="login">Login</a>
-            <a href="Signup.html" class="signup">Sign up</a>
+            <a href="login.php" class="login">Login</a>
+            <a href="signup.php" class="signup">Sign up</a>
         </div>     
     </div>
     <div class="contact-head">
