@@ -9,6 +9,14 @@ include 'header.php';
     <link rel="stylesheet" href="/CSS/queryList.css">
 </head>
 <body>
+    <div class="navbar">
+        <div class="header" onclick="window.location.href='index.php'">
+            Student Help Desk
+        </div>
+        <div class="btn-links">
+            <a href="login.php" class="login">Logout</a>
+        </div>
+    </div>
     <div class="query-head">
         <span class="y-query">Your Queries</span>
     </div>

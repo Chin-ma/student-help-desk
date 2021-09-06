@@ -157,3 +157,191 @@
         left: 80px;
     }
 }
+
+@media (min-width: 481px) and (max-width: 780px) {
+    .query-form {
+        position: relative;
+        width: 100%;
+        height: 49px;
+        left: 0;
+        top: 0;
+    }
+    .query-head {
+        font-size: 25px;
+        top: 7px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .heading {
+        width: 70%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+    }
+    .user-data {
+        position: relative;
+        font-size: 13px;
+        top: 70px; 
+    }
+    #u-name {
+        left: 60px;
+        width: 30%;
+    }
+    #u-sub {
+        left: 210px;
+        width: 30%;
+    }
+    #q-text {
+        font-size: 13px;
+        width: 83%;
+        height: 500%;
+        border: 2px solid #FEA500;
+        top: 456px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .sub-btn {
+        font-size: 13px;
+        width: 20%;
+        height: 64%;
+        top: 788px;
+        bottom: 0;
+        right: 0;
+        left: 450px;
+        margin: auto;
+    }
+    .can-btn {
+        font-size: 13px;
+        width: 20%;
+        height: 64%;
+        top: 788px;
+        bottom: 0;
+        right: 450px;
+        left: 0;
+        margin: auto;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .query-form {
+        position: relative;
+        width: 82%;
+        height: 49px;
+        left: 0;
+        top: 145px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .query-head {
+        font-size: 30px;
+        top: 9px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .heading {
+        height: 120%;
+        width: 65%;
+        top: -50px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        
+    }
+    .user-data {
+        top: 170px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 40%;
+    }
+    #u-name {
+        right: 520px;
+        width: 30%;
+    }
+    #u-sub {
+        left: 520px;
+        width: 30%;
+    }
+    #q-text {
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .query-form {
+        position: relative;
+        width: 82%;
+        height: 49px;
+        left: 0;
+        top: 145px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .query-head {
+        font-size: 40px;
+        top: 15px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .heading {
+        width: 65%;
+        top: -50px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        
+    }
+    .user-data {
+        top: 150px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        height: 60%;
+        font-size: 20px;
+    }
+    #u-name {
+        right: 520px;
+        width: 30%;
+    }
+    #u-sub {
+        left: 520px;
+        width: 30%;
+    }
+    #q-text {
+        top: 557px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 80%;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    .sub-btn {
+        right: 114px;
+        margin: auto;
+        font-size: 20px;
+    }
+    .can-btn {
+        left: 114px;
+        margin: auto;
+        font-size: 20px;
+    }
+}

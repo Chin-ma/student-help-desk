@@ -95,3 +95,85 @@
         left: 27px;
     }
 }
+
+@media (min-width: 481px) and (max-width: 780px) {
+    .stud-query {
+        width: 90%;
+        height: 6%;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 435px;
+        margin: auto;
+        font-size: 25px;
+    }
+    .stud-queries {
+        top: 74px;
+        bottom: 0;
+        right: 0;
+        left: 66px;
+        width: 80%;
+        font-size: 20px;
+    }
+    #insert-text {
+        width: 80%;
+        top: 79px;
+        bottom: 0;
+        right: 0;
+        left: 80px;
+    }
+    .ok-btn {
+        top: 73px;
+        left: 79px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .stud-query {
+        width: 50%;
+        height: 9%;
+        top: 39px;
+        right: 0;
+        left: 0;
+        bottom: 435px;
+        margin: auto;
+        font-size: 35px;
+        text-align: center;
+    }
+    .stud-queries {
+        top: 74px;
+        bottom: 0;
+        right: 0;
+        left: 209px;
+        width: 55%;
+        font-size: 20px;
+    }
+    #insert-text {
+        width: 55%;
+        top: 79px;
+        bottom: 0;
+        right: 0;
+        left: 220px;
+    }
+    .ok-btn {
+        top: 73px;
+        left: 223px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .stud-query {
+        left: 420px;
+    }
+    .stud-queries {
+        left: 315px;
+    }
+    #insert-text {
+        left: 330px;
+    }
+    .ok-btn {
+        left: 340px;
+    }
+}

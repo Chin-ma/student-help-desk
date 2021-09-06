@@ -10,6 +10,11 @@ include 'header.php';
 </head>
 
 <body>
+    <div class="navbar">
+        <div class="header" onclick="window.location.href='index.php'">
+            Student Help Desk
+        </div>
+    </div>
     <div class="form-box">
         <form action="data.php" method="post">
             <input type="text" name="studname" id="stud" class="field" placeholder="Student name">
