@@ -32,3 +32,93 @@
              -6px -6px 33px #ffffa8;
     transition: ease-out 0.4s;
 }
+
+@media screen and (max-width: 480px) {
+    .contact-head {
+        top: 20px;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        width: 60%;
+        padding: 5px;
+        font-size: 15px;
+    }
+    .contact-box {
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 54%;
+        height: 60%;
+        margin: auto;
+        font-size: 10px;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 780px) {
+    .contact-head {
+        top: 20px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 70%;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .contact-box {
+        top: 40px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 60%;
+        height: 400px;
+        margin: auto;
+        font-size: 22px;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 781px) and (max-width: 1024px) {
+    .contact-head {
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 50%;
+        padding: 20px;
+        font-size: 35px;
+    }
+    .contact-box {
+        top: 126px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 50%;
+        height: 500px;
+        margin: auto;
+        font-size: 28px;
+        border-radius: 25px;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .contact-head {
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 20px;
+    }
+    .contact-box {
+        top: 93px;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto;
+    }
+}
