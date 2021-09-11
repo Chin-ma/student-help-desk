@@ -30,8 +30,14 @@ include 'header.php';
             include 'config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries ORDER BY id DESC");
             while ($row = mysqli_fetch_array($sql)) { ?>
+                <div class="timestamp" id="q-time">
+                    <?php echo $row['querytime']?>
+                </div>
                 <div class="query">
                     <?php echo $row['querytext'];?>
+                </div>
+                <div class="timestamp" id="r-time">
+                    <?php echo $row['replytime']?>
                 </div>
                 <div class="query-reply" id="quer" style="display: block;">
                     <?php echo $row['reply'];?>

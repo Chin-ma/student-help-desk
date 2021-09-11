@@ -14,8 +14,8 @@
 
 .stud-queries {
     position: relative;
-    top: 170px;
-    left: 500px;
+    top: 108px;
+    left: 567px;
     background-color: #fce08e;
     width: 750px;
     font-family: Source Sans Pro;
@@ -42,8 +42,8 @@
 
 #insert-text {
     position: relative;
-    top: 175px;
-    left: 516px;
+    top: 122px;
+    left: 583px;
     resize: none;
     background-color: #fce08e;
     font-family: Source Sans Pro;
@@ -55,12 +55,23 @@
 
 .ok-btn {
     position: relative;
-    top: 166px;
-    left:528px;
+    top: 114px;
+    left:596px;
     font-family: Source Sans Pro;
     background-color: #fea500;
     font-size: 18px;
     border-radius: 10px;
+}
+
+.timestamp {
+    position: relative;
+    top: 118px;
+    left: 1172px;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    color: gray;
+    width: 160px;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 480px) {

@@ -41,8 +41,8 @@
 
 .query {
     position: relative;
-    top: 76px;
-    left: 550px;
+    top: 87px;
+    left: 580px;
     background-color: #fce08e;
     width: 750px;
     font-family: Source Sans Pro;
@@ -56,8 +56,8 @@
 
 .query-reply {
     position: relative;
-    top: 76px;
-    left: 550px;
+    top: 87px;
+    left: 580px;
     background-color: #154476;
     color: white;
     width: 750px;
@@ -68,6 +68,23 @@
     border-radius: 10px;
     margin: 15px;
     overflow: hidden;
+}
+
+.timestamp {
+    position: relative;
+    top: 87px;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    color: gray;
+    width: 160px;
+    overflow-x: hidden;
+}
+
+#q-time {
+    left: 585px;
+}
+#r-time {
+    left: 1168px;
 }
 
 @media screen and (max-width: 480px) {

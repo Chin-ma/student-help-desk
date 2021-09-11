@@ -21,11 +21,14 @@
             include 'Config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries");
             while ($row = mysqli_fetch_assoc($sql)) { ?>
+                <div class="timestamp">
+                    <?php echo $row['querytime'];?>
+                </div>
                 <div class="stud-queries">
                     <?php echo $row['name'];?> :&nbsp
                     <?php echo $row['querytext'];?>
                 </div>
-                <form action="Reply.php" method="post">
+                <form action="reply.php" method="post">
                     <textarea id="insert-text" name="reply" value="<?php echo $row['reply'];?>"></textarea>   
                     <button type="submit" name="submit" value="Submit Form" class="ok-btn">OK</button>
                     <input type="hidden" name="id" value="<?php echo $row['id'];?>">
