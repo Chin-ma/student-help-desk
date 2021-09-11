@@ -6,7 +6,7 @@ $name = $_POST['name'];
 $subject = $_POST['subject'];
 $querytext = trim($_POST['querytext']);
 
-$sql = "INSERT INTO queries (name, subject, querytext) VALUES ('$name', '$subject', '$querytext')";
+$sql = "INSERT INTO queries (name, subject, querytext, querytime) VALUES ('$name', '$subject', '$querytext', CURRENT_TIMESTAMP())";
 
 if ($conn->query($sql) === TRUE) {
     echo 'Details added';
