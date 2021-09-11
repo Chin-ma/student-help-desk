@@ -28,7 +28,7 @@ include 'header.php';
     <div>
     <?php
             include 'config.php';
-            $sql = mysqli_query($conn, "SELECT * FROM queries");
+            $sql = mysqli_query($conn, "SELECT * FROM queries ORDER BY id DESC");
             while ($row = mysqli_fetch_array($sql)) { ?>
                 <div class="query">
                     <?php echo $row['querytext'];?>
