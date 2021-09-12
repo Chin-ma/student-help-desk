@@ -1,5 +1,7 @@
 <?php 
 include 'header.php';
+$add = 'Reply : ';
+$colon = ' : ';
 ?>
 
 <!DOCTYPE html>
@@ -34,13 +36,23 @@ include 'header.php';
                     <?php echo $row['querytime']?>
                 </div>
                 <div class="query">
-                    <?php echo $row['querytext'];?>
+                    <?php echo $row['name'].$colon.$row['querytext'];?>
                 </div>
-                <div class="timestamp" id="r-time">
-                    <?php echo $row['replytime']?>
-                </div>
-                <div class="query-reply" id="quer" style="display: block;">
-                    <?php echo $row['reply'];?>
+                <?php 
+                    if ($row['reply']) { ?>
+                        <div class="timestamp" id="r-time">
+                            <?php echo $row['replytime'];?>
+                        </div>
+                    <?php }?> 
+                <div class="query-reply" id="quer">
+                    <?php 
+                        if ($row['reply']) {
+                            echo $add.$row['reply'];
+                        } else {
+                            echo $row['reply'];
+                        }
+                    ?>
+                    
                 </div>
                 
             <?php }?>

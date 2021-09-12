@@ -105,6 +105,14 @@
         top: 31px;
         left: 27px;
     }
+    .timestamp {
+        left: 114px;
+        top: 30px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 780px) {
@@ -137,6 +145,13 @@
         top: 73px;
         left: 79px;
         font-size: 15px;
+    }
+    .timestamp {
+        top: 87px;
+        left: 224px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
 
@@ -172,6 +187,13 @@
         left: 223px;
         font-size: 15px;
     }
+    .timestamp {
+        top: 87px;
+        left: 189px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -186,5 +208,12 @@
     }
     .ok-btn {
         left: 340px;
+    }
+    .timestamp {
+        top: 121px;
+        left: 285px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
