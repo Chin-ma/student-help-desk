@@ -14,8 +14,8 @@
 
 .stud-queries {
     position: relative;
-    top: 170px;
-    left: 500px;
+    top: 108px;
+    left: 567px;
     background-color: #fce08e;
     width: 750px;
     font-family: Source Sans Pro;
@@ -42,8 +42,8 @@
 
 #insert-text {
     position: relative;
-    top: 175px;
-    left: 516px;
+    top: 122px;
+    left: 583px;
     resize: none;
     background-color: #fce08e;
     font-family: Source Sans Pro;
@@ -55,8 +55,8 @@
 
 .ok-btn {
     position: relative;
-    top: 166px;
-    left:528px;
+    top: 114px;
+    left:596px;
     font-family: Source Sans Pro;
     background-color: #fea500;
     font-size: 18px;
@@ -78,6 +78,18 @@
     border: none;
     background-color: none;
     background: none;
+
+}
+
+.timestamp {
+    position: relative;
+    top: 118px;
+    left: 1172px;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    color: gray;
+    width: 160px;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 480px) {
@@ -111,6 +123,14 @@
         top: 31px;
         left: 27px;
     }
+    .timestamp {
+        left: 114px;
+        top: 30px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        font-size: 12px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 780px) {
@@ -143,6 +163,13 @@
         top: 73px;
         left: 79px;
         font-size: 15px;
+    }
+    .timestamp {
+        top: 87px;
+        left: 224px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 }
 
@@ -178,6 +205,13 @@
         left: 223px;
         font-size: 15px;
     }
+    .timestamp {
+        top: 87px;
+        left: 189px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
 
 @media (min-width: 1025px) and (max-width: 1440px) {
@@ -192,5 +226,12 @@
     }
     .ok-btn {
         left: 340px;
+    }
+    .timestamp {
+        top: 121px;
+        left: 285px;
+        right: 0;
+        bottom: 0;
+        margin: auto;
     }
 }

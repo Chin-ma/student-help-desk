@@ -21,6 +21,9 @@
             include 'Config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries");
             while ($row = mysqli_fetch_assoc($sql)) { ?>
+                <div class="timestamp">
+                    <?php echo $row['querytime'];?>
+                </div>
                 <div class="stud-queries">
                     <?php echo $row['name'];?> :&nbsp
                     <?php echo $row['querytext'];?>

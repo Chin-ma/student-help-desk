@@ -1,5 +1,7 @@
 <?php 
 include 'header.php';
+$add = 'Reply : ';
+$colon = ' : ';
 ?>
 
 <!DOCTYPE html>
@@ -30,11 +32,27 @@ include 'header.php';
             include 'config.php';
             $sql = mysqli_query($conn, "SELECT * FROM queries ORDER BY id DESC");
             while ($row = mysqli_fetch_array($sql)) { ?>
-                <div class="query">
-                    <?php echo $row['querytext'];?>
+                <div class="timestamp" id="q-time">
+                    <?php echo $row['querytime']?>
                 </div>
-                <div class="query-reply" id="quer" style="display: block;">
-                    <?php echo $row['reply'];?>
+                <div class="query">
+                    <?php echo $row['name'].$colon.$row['querytext'];?>
+                </div>
+                <?php 
+                    if ($row['reply']) { ?>
+                        <div class="timestamp" id="r-time">
+                            <?php echo $row['replytime'];?>
+                        </div>
+                    <?php }?> 
+                <div class="query-reply" id="quer">
+                    <?php 
+                        if ($row['reply']) {
+                            echo $add.$row['reply'];
+                        } else {
+                            echo $row['reply'];
+                        }
+                    ?>
+                    
                 </div>
                 
             <?php }?>
