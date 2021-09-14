@@ -25,7 +25,11 @@
                     <?php echo $row['name'];?> :&nbsp
                     <?php echo $row['querytext'];?>
                 </div>
-                <form action="Reply.php" method="post">
+                <form action="delete.php" method="post">
+                    <button type="submit" name="submit" value="Submit Form" class="delete" onclick="del()"><i class="fa fa-trash-o fa-2x" id="del-btn"></i></button>
+                    <input type="hidden" name="id" value="<?php echo $row['id'];?>">
+                </form>
+                <form action="reply.php" method="post">
                     <textarea id="insert-text" name="reply" value="<?php echo $row['reply'];?>"></textarea>   
                     <button type="submit" name="submit" value="Submit Form" class="ok-btn">OK</button>
                     <input type="hidden" name="id" value="<?php echo $row['id'];?>">
@@ -33,5 +37,10 @@
                 
         <?php }?>
     </div>
+    <script>
+        function del() {
+            alert("Are you sure you want to delete this query?")
+        }
+    </script>
 </body>
 </html>

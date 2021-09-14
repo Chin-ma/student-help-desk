@@ -63,6 +63,23 @@
     border-radius: 10px;
 }
 
+#del-btn {
+    position: relative;
+    top: 62px;
+    left: 1333px;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    color: red;
+    cursor: pointer;
+}
+
+.delete {
+    border: none;
+    background-color: none;
+    background: none;
+}
+
 @media screen and (max-width: 480px) {
     .stud-query {
         position: absolute;
