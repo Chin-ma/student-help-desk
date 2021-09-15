@@ -92,6 +92,23 @@
     overflow-x: hidden;
 }
 
+.rep-show {
+    position: relative;
+    top: 90px;
+    right: 0;
+    left: 15px;
+    bottom: 0;
+    margin: auto;
+    font-family: Source Sans Pro;
+    font-size: 18px;
+    background-color: #fea500;
+    width: 5%;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
 @media screen and (max-width: 480px) {
     .stud-query {
         position: absolute;
